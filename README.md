@@ -18,5 +18,5 @@ You can use the command `docker image ls` to see if your dockerfile was successf
 ## Step 4: Create a Container from the Image
 Copy and run [this batch script](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/spinup.bat) or use the following command to create a Docker Container of your image: `docker run -itd [image name] bash`
 
-## Step 5: Connect to your Container using Exec or Batch
+## Step 5: Connect to your Container
 Copy and run [this batch script](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/attach.bat) to run your first created Docker Container or use `docker -ps` to get the container's unique ID and `docker exec -it [Container ID] bash` to attach to the container in the terminal.
