@@ -3,7 +3,7 @@ Short guide on how to install and run Docker, set up your first development envi
 
 ## Step 1: Install Docker
 Visit the following webpage to install Docker: https://www.docker.com/get-started
-Download and install Docker. During installation, you should be prompted to update your WSL Kernel to the most recent version. Make sure you do this and restart your computer when prompted.
+Download and install Docker. During installation, you may be asked to update your WSL Kernel to the most recent version. Make sure you do this and restart your computer when prompted.
 
 ## Step 2: Create a .dockerfile
 Create a dockerfile, an example of which can be found on this repository [here](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/Dockerfile).
