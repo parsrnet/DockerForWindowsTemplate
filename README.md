@@ -11,14 +11,12 @@ Create a dockerfile, an example of which can be found on this repository [here](
 Make sure to include a FROM directive using an acceptable image to copy from such as CentOS, RHEL, or Ubuntu and the :latest suffix to get the latest version. Alternatively, you may use :\[version] to copy a specific version.
 
 ## Step 3: Run the "build" Command
-Using command prompt, run `docker build -f \[dir to dockerfile] -t \[image name] .` or copy [this batch script](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/build.bat) and run it in the same directory as the single Dockerfile.
+Copy and run [this batch script](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/build.bat) or run `docker build -f \[dir to dockerfile] -t \[image name] .` in the command prompt to build your dockerfile.
 
-### Make sure you've built your image correctly:
-In order to make sure your image was successfully built, run the command `docker image ls`
-You should see your image in the following list.
+You can use the command `docker image ls` to see if your dockerfile was successfully built into an image.
 
 ## Step 4: Create a Container from the Image
-Run the following command to create a Docker Container of your image: `docker run -itd \[image name] bash` or copy and run [this batch script](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/spinup.bat) after having run the build script.
+Copy and run [this batch script](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/spinup.bat) or use the following command to create a Docker Container of your image: `docker run -itd \[image name] bash`
 
 ## Step 5: Connect to your Container using Exec or Batch
 Copy and run [this batch script](https://github.com/parsrnet/InstallAndRunDockerOnWindows/blob/main/attach.bat) to run your first created Docker Container or use `docker -ps` to get the container's unique ID and `docker exec -it \[Container ID] bash` to attach to the container in the terminal.
