@@ -13,13 +13,5 @@ Modify the dockerfile for your own use. Included is a basic template generated b
 
 Make sure to include a FROM directive using an acceptable image to copy from such as CentOS, RHEL, or Ubuntu and the :latest suffix to get the latest version. Alternatively, you may use :\[version] to copy a specific version.
 
-## Step 4: Run the "build" Command to Build your Image
-Run the 'build.bat' script to automatically build a new image from the Dockerfile.
-
-You can use the command `docker image ls` to ensure your Dockerfile was successfully built into an image.
-
-## Step 5: Run the "spinup" Command to Spin Up a new Container from that Image
-Run the 'spinup.bat' script to automatically create a new container using the newly built image.
-
-## Step 6: Run the "attach" Command to Attach to your new Container
-Run the 'attach.bat' script to automatically connect to the container. Be warned that if you create more than one container, this script will only connect to the oldest without any modifications.
+## Step 4: Run the "build" Command to Build Image, Create Container, and Attach to Container
+Run the 'build.bat' script to automatically handle image building from the Dockerfile, container creation, and attachment. View build.bat annotations for explanation.
